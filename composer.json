@@ -1,5 +1,5 @@
 {
-    "name": "romeritocampos/suapclient",
+    "name": "romeritocampos/suap-php-api",
     "description": "Pacote que definie classe client para api do suap",
     "type": "library",
     "require": {
