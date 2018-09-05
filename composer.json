@@ -1,0 +1,22 @@
+{
+    "name": "RomeritoCampos/SuapClient",
+    "description": "Pacote que definie classe client para api do suap",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Romerito Campos",
+            "email": "romerito.campos@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-0" : {
+            "Romerito\\Suap" : "src/"
+        }
+    }
+}
