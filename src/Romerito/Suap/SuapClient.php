@@ -7,14 +7,12 @@ use Romerito\Suap\SuapAPI;
 
 class SuapClient
 {    
-	private $token = "";
-	private $user = "";
-	private $password = "";
+    private $token = "";
 
 	#guzzle client
-	private $client = null;
+	protected $client = null;
 
-	private const ENDPOINT = "https://suap.ifrn.edu.br/api/v2/";
+	protected const ENDPOINT = "https://suap.ifrn.edu.br/api/v2/";
 
     public function __construct()
     {
