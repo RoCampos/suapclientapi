@@ -3,6 +3,7 @@
 namespace Romerito\Suap;
 
 use GuzzleHttp\Client as GClient;
+use Romerito\Suap\SuapAPI;
 
 class SuapClient
 {    
@@ -22,7 +23,7 @@ class SuapClient
 
     function auth($user, $password)
     {
-    	$url = self::ENDPOINT . '/autenticacao/token/';
+    	$url = self::ENDPOINT . SuapAPI::AUTH;
         $param = ['form_params'=>
         	['username' => $user, 'password' => $password]
     	];
