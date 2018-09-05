@@ -40,6 +40,24 @@ class SuapClient
         return false;
     }
 
+    function get($url)
+    {
+    	$data = [];
+    	$res = null;
+    	if (isset($this->client)) {
+    		$urlfull = self::ENDPOINT . $url;
+    		$res = $this->client->request('GET', $urlfull,
+    			['headers' => ['Authorization'=> 'JWT '.$this->token]
+    		]);
+    	}
+
+    	if (isset($res) && $res->getStatusCode()==200) {
+    		$data = json_decode($res->getBody());
+    	}
+
+    	return $data;
+    }
+
     /**
      * @return type
      */
