@@ -7,7 +7,6 @@
 	$user = readline();
 	$pass = readline();
 
-
 	$suap = new SC;
 	echo $suap->auth ($user, $pass);
 	echo $suap->getToken() . "\n\n";
