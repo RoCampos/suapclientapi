@@ -52,7 +52,6 @@ class SuapClient
     	if (isset($res) && $res->getStatusCode()==200) {
     		$data = json_decode($res->getBody());
     	}
-
     	return $data;
     }
 
