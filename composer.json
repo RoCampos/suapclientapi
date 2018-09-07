@@ -15,7 +15,8 @@
 
     "autoload": {
         "psr-0" : {
-            "Romerito\\Suap" : "src/"
+            "Romerito\\Suap" : "src/",
+            "Romerito\\model": "src/"
         }
     }
 }
