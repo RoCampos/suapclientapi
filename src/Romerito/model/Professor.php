@@ -4,18 +4,57 @@ namespace Romerito\model;
 
 
 /**
- * summary
+ * This class implements a new type Professor.
+ * 
+ * The class is defined with four attributes.
+ * 
+ * $id is an attribute associated with professor.
+ * 
+ * Each professor has an $registry.
+ * 
+ * Additional informations are name and email.
+ * 
+ * 
+ * @author Romerito C. Andrade <romerito.campos@gmail.com>
+ * 
  */
 class Professor
 {
 
+    /**
+     * 
+     * @var int identifier provided by SUAP API. 
+     * 
+     */
 	private $id = 0;
+
+    /**
+     * 
+     * @var int each professor has one registry.
+     * 
+     */
 	private $registry = 0;
+
+    /**
+     * 
+     * @var string the name of the professor.
+     * 
+     */
 	private $name = "";
+
+    /**
+     * 
+     * @var string the email of the professor.
+     * 
+     */
 	private $email = "";
 
     /**
-     * summary
+     * The construction of an instance of Professor
+     * demands four attributes. 
+     * 
+     * These attributes are: $id, $registry, $name and $email.
+     * 
      */
     public function __construct($id, $registry, $name, $email)
     {
@@ -26,7 +65,10 @@ class Professor
     }
 
     /**
-     * @return type
+     * 
+     * Access $id of a Professor.
+     * 
+     * @return string
      */
     public function getName()
     {
@@ -34,7 +76,11 @@ class Professor
     }
 
     /**
-     * @return type
+     * 
+     * Access $id of a Professor.
+     * 
+     * 
+     * @return int
      */
     public function getId()
     {
@@ -42,7 +88,10 @@ class Professor
     }
 
     /**
-     * @return type
+     * 
+     * Access $email of a Professor.
+     * 
+     * @return string
      */
     public function getEmail()
     {
@@ -50,13 +99,23 @@ class Professor
     }
 
     /**
-     * @return type
+     * 
+     * Access $registry of a Professor.
+     * 
+     * @return string
      */
     public function getRegistry()
     {
         return $this->registry;
     }
 
+
+    /**
+     * 
+     * Returns an instance of Professor in json format.
+     * 
+     * @return array 
+     */
     public function json () {
     	return json_encode([
     		"id" => $this->id, 
