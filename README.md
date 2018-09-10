@@ -5,7 +5,7 @@ This project implements a wrapper to [SUAP API](https://bit.ly/2N10jvW). The aim
 ## How to install
 
 The package can be installed from the [packagist.org](https://packagist.org/packages/romeritocampos/suap-php-api) by the following command:
-> composer require "composer require romeritocampos/suap-php-apiˆ^v0.1-beta"
+> composer require "composer require romeritocampos/suap-php-api:dev-master"
 
 ## How to use
 
