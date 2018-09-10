@@ -33,7 +33,7 @@ Authorization process requires the user credentials. In the following code, it i
 ## General Calls
 Alternativelly, it is possible use URL's provided by the API in the following way
 ```php
-    require __DIR__ . "/vendor/autoload.php";
+    	require __DIR__ . "/vendor/autoload.php";
 	use Romerito\Suap\SuapClient;
 	$client = new SuapClient;
 	$user = readline();
