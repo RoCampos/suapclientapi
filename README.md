@@ -1,5 +1,5 @@
 # PHP SUAP CLIENT API
----
+
 This project implements a wrapper to [SUAP API](https://bit.ly/2N10jvW). The aim is to provide php code to deal with functionalities provided by SUAP API. In this way, it is possible construct php aplications using the SUAP API in php way. 
 
 ## How to install
